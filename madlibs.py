@@ -11,6 +11,7 @@ AWESOMENESS = [
     'awesome', 'terrific', 'fantastic', 'neato', 'fantabulous', 'wowza', 'oh-so-not-meh',
     'brilliant', 'ducky', 'coolio', 'incredible', 'wonderful', 'smashing', 'lovely']
 
+# global_person =""
 
 @app.route('/')
 def start_here():
@@ -31,6 +32,7 @@ def greet_person():
     """Greet user."""
 
     person = request.args.get("person")
+    # global_person = person
 
     compliment = choice(AWESOMENESS)
 
@@ -45,8 +47,7 @@ def show_game_form():
     answer = request.args.get("game-response")
 
     if answer == "yes":
-        return render_template("game.html",
-                           answer="yes")
+        return render_template("game.html")
 
     else:
         return render_template("goodbye.html")
@@ -59,9 +60,11 @@ def show_madlib():
     color = request.args.get("color")
     noun = request.args.get("noun")
     adjective = request.args.get("adjective")
+    # person = global_person
 
 
-    return render_template("madlib.html", 
+    return render_template("madlib.html",
+                            # person=person, 
                             person_name=person_name, 
                             color=color, 
                             noun=noun, 

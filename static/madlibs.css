@@ -1,0 +1,15 @@
+body {
+    background-color: #08d0c1;
+    font-family: "Oswald", sans-serif;
+    text-align: center;
+    margin-top: 300px;
+}
+
+h1 {
+
+
+}
+
+.rounded-input {
+    border-radius: 10px;
+}

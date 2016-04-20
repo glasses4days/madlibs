@@ -2,15 +2,41 @@
 <html>
 <head>
   <title>GAME!</title>
+  <link rel="stylesheet" href="static/madlibs.css">
+  <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
 </head>
 <body>
 
 <h1>GREAT!</h1>
 <form action="/madlib">
-    Name a person: <input type="text" name="person_name"><br>
-    Name a color: <input type="text" name="color"><br>
-    Name a noun: <input type="text" name="noun"><br>
-    Name an adjective: <input type="text" name="adjective"><br>
+    Pick a celebrity: 
+    <select name="person_name">
+        <option value="beyonce">Beyonce</option>
+        <option value="kanye">Kanye</option>
+        <option value="jayz">Jay-Z</option>
+        <option value="kim">Kim</option>
+    </select><br>
+    Pick a fabric:
+    <select name="color">
+        <option value="sequin">Gold Sequins</option>
+        <option value="latex">Silver Latex</option>
+        <option value="leather">Black Leather</option>
+        <option value="suede">Red Suede</option>
+    </select><br>
+    Pick an accessory:
+    <select name="noun">
+        <option value="bag">Chanel Clutch</option>
+        <option value="crown">Queen Crown</option>
+        <option value="sunglasses">Dior Sunglasses</option>
+        <option value="baby">North West and Blue Ivy</option>
+    </select><br>
+    Pick a mood:
+    <select name="adjective">
+        <option value="fabulous">Fabulous</option>
+        <option value="surly">Surly</option>
+        <option value="fly">Fly</option>
+        <option value="dope">Dope</option>
+    </select><br>
     <input type="submit">
 </form>
 </body>
